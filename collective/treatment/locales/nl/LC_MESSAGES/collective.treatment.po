@@ -1,0 +1,1376 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: collective.treatment\n"
+"POT-Creation-Date: 2015-04-09 15:28+0000\n"
+"PO-Revision-Date: 2015-04-10 15:29+0000’\n"
+"Last-Translator: INTK <info@intk.com>\n"
+"Language-Team: Dutch <info@intk.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-Code: nl\n"
+"Language-Name: Dutch\n"
+"Preferred-Encodings: utf-8\n"
+"Domain: collective.treatment\n"
+
+#: ../profiles/default/types/Object.xml:7
+msgid "Object"
+msgstr "Objecten"
+
+#: ../profiles/default/types/Object.xml:8
+msgid "Information about an object typically collected by museums"
+msgstr "Informatie over een object meestal verzameld door musea"
+
+#: ../treatment.py
+msgid "Body"
+msgstr "Tekst"
+
+#: ../treatment.py
+msgid "Description"
+msgstr "Beschrijving"
+
+#: ../treatment.py
+msgid "Identification"
+msgstr "Identificatie"
+
+#: ../treatment.py
+msgid "Institution name"
+msgstr "Instellingnaam"
+
+#: ../treatment.py
+msgid "Administrative name"
+msgstr "Afdeling"
+
+#: ../treatment.py
+msgid "Collection"
+msgstr "Collectie"
+
+#: ../treatment.py
+msgid "Object number"
+msgstr "Objectnummer"
+
+#: ../treatment.py
+msgid "Rec. type"
+msgstr "Rec. type"
+
+#: ../treatment.py
+msgid "Part"
+msgstr "Onderdeel"
+
+#: ../treatment.py
+msgid "Tot. Number"
+msgstr "Aantal"
+
+#: ../treatment.py
+msgid "Copy number"
+msgstr "Serienummer"
+
+#: ../treatment.py
+msgid "Edition"
+msgstr "Oplage"
+
+#: ../treatment.py
+msgid "Distinguish features"
+msgstr "Ondersch. kenmerken"
+
+#: ../treatment.py
+msgid "Object Category"
+msgstr "Objectcategorie"
+
+#: ../treatment.py
+msgid "Object name"
+msgstr "Objectnaam"
+
+#: ../treatment.py
+msgid "Other name"
+msgstr "Ander benaming"
+
+#: ../treatment.py
+msgid "Physical Characteristics"
+msgstr "Fysieke kenmerken"
+
+#: ../treatment.py
+msgid "Physical Description"
+msgstr "Fysieke beschrijving"
+
+#: ../treatment.py
+msgid "Keywords"
+msgstr "Trefwoorden"
+
+#: ../treatment.py
+msgid "Part"
+msgstr "Onderdeel"
+
+#: ../treatment.py
+msgid "Aspect"
+msgstr "Aspect"
+
+#: ../treatment.py
+msgid "Keyword"
+msgstr "Trefwoord"
+
+#: ../treatment.py
+msgid "Notes"
+msgstr "Bijzonderheden"
+
+#: ../treatment.py
+msgid "Techniques"
+msgstr "Technieken"
+
+#: ../treatment.py
+msgid "Technique"
+msgstr "Techniek"
+
+#: ../treatment.py
+msgid "Materials"
+msgstr "Materialen"
+
+#: ../treatment.py
+msgid "Material"
+msgstr "Materiaal"
+
+#: ../treatment.py
+msgid "Dimensions"
+msgstr "Afmetingen"
+
+#: ../treatment.py
+msgid "Dimention"
+msgstr "Afmeting"
+
+#: ../treatment.py
+msgid "Value"
+msgstr "Waarde"
+
+#: ../treatment.py
+msgid "Unit"
+msgstr "Eenh"
+
+#: ../treatment.py
+msgid "Precision"
+msgstr "Precisie"
+
+#: ../treatment.py
+msgid "Dimensions (free text)"
+msgstr "Afmeting (vrije tekst)"
+
+#: ../treatment.py
+msgid "Frame"
+msgstr "Omlijsting"
+
+#: ../treatment.py
+msgid "Detail"
+msgstr "Bijzonderheden"
+
+#: ../treatment.py
+msgid "Production & Dating"
+msgstr "Vervaardiging & Datering"
+
+#: ../treatment.py
+msgid "Creator"
+msgstr "Vervaardiger"
+
+#: ../treatment.py
+msgid "Maker"
+msgstr "Vervaardiger"
+
+#: ../treatment.py
+msgid "Qualifier"
+msgstr "Kwalificatie"
+
+#: ../treatment.py
+msgid "Role"
+msgstr "Rol"
+
+#: ../treatment.py
+msgid "Place"
+msgstr "Plaats"
+
+#: ../treatment.py
+msgid "School / style"
+msgstr "School / stijl"
+
+#: ../treatment.py
+msgid "Production notes"
+msgstr "Bijzonderheden"
+
+#: ../treatment.py
+msgid "Production reason"
+msgstr "Reden vervaardiging"
+
+#: ../treatment.py
+msgid "Dating"
+msgstr "Datering"
+
+#: ../treatment.py
+msgid "Period"
+msgstr "Periode"
+
+#: ../treatment.py
+msgid "Date (early)"
+msgstr "Datering van"
+
+#: ../treatment.py
+msgid "Precision"
+msgstr "Precisie"
+
+#: ../treatment.py
+msgid "Date (late)"
+msgstr "Tot"
+
+#
+# Condition & Conservation
+#
+
+#: ../treatment.py
+msgid "Condition & Conservation"
+msgstr "Toestand & Conservering"
+
+#: ../treatment.py
+msgid "Conservation treatment"
+msgstr "Conserveringsprioriteit"
+
+#: ../treatment.py
+msgid "Priority"
+msgstr "Prioriteit"
+
+#: ../treatment.py
+msgid "Next condition check"
+msgstr "Volgende toets en controle"
+
+#: ../treatment.py
+msgid "Date"
+msgstr "Datum"
+
+#: ../treatment.py
+msgid "Completeness"
+msgstr "Compleetheid"
+
+#: ../treatment.py
+msgid "Checked by"
+msgstr "Controleur"
+
+#: ../treatment.py
+msgid "Condition"
+msgstr "Toestand"
+
+#: ../treatment.py
+msgid "Condition"
+msgstr "Toestand"
+
+#: ../treatment.py
+msgid "Enviromental condition"
+msgstr "Bewaarvorm"
+
+#: ../treatment.py
+msgid "Preservation form"
+msgstr "Bewaarvorm"
+
+#: ../treatment.py
+msgid "Conservation request"
+msgstr "Conserveringverzoeken"
+
+#: ../treatment.py
+msgid "Treatment"
+msgstr "Behandeling"
+
+#: ../treatment.py
+msgid "Requester"
+msgstr "Aanvrager"
+
+#: ../treatment.py
+msgid "Reason"
+msgstr "Reden"
+
+#: ../treatment.py
+msgid "Status"
+msgstr "Status"
+
+#: ../treatment.py
+msgid "low"
+msgstr "laag"
+
+#: ../treatment.py
+msgid "medium"
+msgstr "normal"
+
+#: ../treatment.py
+msgid "high"
+msgstr "hoog"
+
+#: ../treatment.py
+msgid "urgent"
+msgstr "urgent"
+
+#
+# Inscriptions and markings
+#
+
+#: ../treatment.py
+msgid "Inscriptions and markings"
+msgstr "Opschrijven en merken"
+
+#: ../treatment.py
+msgid "Type"
+msgstr "Soort"
+
+#: ../treatment.py
+msgid "Position"
+msgstr "Positie"
+
+#: ../treatment.py
+msgid "Method"
+msgstr "Methode"
+
+#: ../treatment.py
+msgid "Date"
+msgstr "Datum"
+
+#: ../treatment.py
+msgid "Role"
+msgstr "Rol"
+
+#: ../treatment.py
+msgid "Content"
+msgstr "Inhoud"
+
+#: ../treatment.py
+msgid "Description"
+msgstr "Beschrijving"
+
+#: ../treatment.py
+msgid "Interpretation"
+msgstr "Interpretatie"
+
+#: ../treatment.py
+msgid "Language"
+msgstr "Taal"
+
+#: ../treatment.py
+msgid "Notes"
+msgstr "Bijzonderheden"
+
+#
+# Value & Insurance
+#
+
+#: ../treatment.py
+msgid "Value & Insurance"
+msgstr "Waarde"
+
+#: ../treatment.py
+msgid "Valuation"
+msgstr "Waardebepaling"
+
+#: ../treatment.py
+msgid "Value"
+msgstr "Waarde"
+
+#: ../treatment.py
+msgid "Curr."
+msgstr "Val."
+
+#: ../treatment.py
+msgid "Valuer"
+msgstr "Taxateur"
+
+#: ../treatment.py
+msgid "Insurance"
+msgstr "Verzekering"
+
+#: ../treatment.py
+msgid "Commercial"
+msgstr "commercieel"
+
+#: ../treatment.py
+msgid "Indemnity"
+msgstr "indemniteit"
+
+#: ../treatment.py
+msgid "Policy number"
+msgstr "Polisnummer"
+
+#: ../treatment.py
+msgid "Insurance company"
+msgstr "Verzekeringsmaatschappij"
+
+#: ../treatment.py
+msgid "Confirmation date"
+msgstr "Bevestigingsdatum"
+
+#: ../treatment.py
+msgid "Renewal date"
+msgstr "Verloopdatum"
+
+#: ../treatment.py
+msgid "Reference"
+msgstr "Referentie"
+
+#: ../treatment.py
+msgid "Conditions"
+msgstr "Voorwaarden"
+
+#
+# Acquisition
+#
+
+#: ../treatment.py
+msgid "Acquisition"
+msgstr "Verwerving"
+
+#: ../treatment.py
+msgid "Accession"
+msgstr "Inschrijving"
+
+#: ../treatment.py
+msgid "Accession date"
+msgstr "Inschrijvingsdatum"
+
+#: ../treatment.py
+msgid "Acquisition"
+msgstr "Verwerving"
+
+#: ../treatment.py
+msgid "Acquisition number"
+msgstr "Verwervingsnummer"
+
+#: ../treatment.py
+msgid "Acquisition number"
+msgstr "Verwervingsnummer"
+
+#: ../treatment.py
+msgid "Method"
+msgstr "Methode"
+
+#: ../treatment.py
+msgid "Rec.no."
+msgstr "Rec.nr."
+
+#: ../treatment.py
+msgid "Lot no."
+msgstr "Lotnr."
+
+#: ../treatment.py
+msgid "From"
+msgstr "Van"
+
+#: ../treatment.py
+msgid "Auction"
+msgstr "Veiling"
+
+#: ../treatment.py
+msgid "Place"
+msgstr "Plaats"
+
+#: ../treatment.py
+msgid "Reason"
+msgstr "Reden"
+
+#: ../treatment.py
+msgid "Conditions"
+msgstr "Voorwaarden"
+
+#: ../treatment.py
+msgid "Authorization"
+msgstr "Autorisatie"
+
+#: ../treatment.py
+msgid "Authorizer"
+msgstr "Autorisator"
+
+#: ../treatment.py
+msgid "Costs"
+msgstr "Kosten"
+
+#: ../treatment.py
+msgid "Offer price"
+msgstr "Vraagprijs"
+
+#: ../treatment.py
+msgid "Curr."
+msgstr "Valuta"
+
+#: ../treatment.py
+msgid "Purchase price"
+msgstr "Aankoopprijs"
+
+#: ../treatment.py
+msgid "Funding"
+msgstr "Financiering"
+
+#: ../treatment.py
+msgid "Amount"
+msgstr "Bedrag"
+
+#: ../treatment.py
+msgid "Source"
+msgstr "Bron"
+
+#: ../treatment.py
+msgid "Provisos"
+msgstr "Bepalingen"
+
+#: ../treatment.py
+msgid "Documentation"
+msgstr "Documentatie"
+
+#: ../treatment.py
+msgid "Reference"
+msgstr "Referentie"
+
+#
+# Disposal
+#
+
+#: ../treatment.py
+msgid "Disposal"
+msgstr "Afstoting"
+
+#: ../treatment.py
+msgid "Deaccession"
+msgstr "Uitschrijving"
+
+#: ../treatment.py
+msgid "Deaccession date"
+msgstr "Uitschrijvingsdatum"
+
+#: ../treatment.py
+msgid "New object number"
+msgstr "Nieuw objectnummer"
+
+#: ../treatment.py
+msgid "Disposal"
+msgstr "Afstoting"
+
+#: ../treatment.py
+msgid "Disposal number"
+msgstr "Afstotingsnummer"
+
+#: ../treatment.py
+msgid "Proposed recipient"
+msgstr "Aspirant-ontvanger"
+
+#: ../treatment.py
+msgid "Recipient"
+msgstr "Ontvanger"
+
+#: ../treatment.py
+msgid "Reason"
+msgstr "Reden"
+
+#: ../treatment.py
+msgid "Provisos"
+msgstr "Voorwaarden"
+
+#: ../treatment.py
+msgid "Finance"
+msgstr "Financiën"
+
+#: ../treatment.py
+msgid "Disposal price"
+msgstr "Verkoopprijs"
+
+#
+# Ownership history
+#
+
+#: ../treatment.py
+msgid "Ownership history"
+msgstr "Eigendomsgeschiedenis"
+
+#: ../treatment.py
+msgid "Ownership"
+msgstr "Eigendom"
+
+#: ../treatment.py
+msgid "Current Owner"
+msgstr "Huidige eigenaar"
+
+#: ../treatment.py
+msgid "History"
+msgstr "Geschiedenis"
+
+#: ../treatment.py
+msgid "Owner"
+msgstr "Eigenaar"
+
+#: ../treatment.py
+msgid "From"
+msgstr "Vanaf"
+
+#: ../treatment.py
+msgid "Until"
+msgstr "Tot"
+
+#: ../treatment.py
+msgid "Exchange method"
+msgstr "Verwervingsmethode"
+
+#: ../treatment.py
+msgid "Acquired from"
+msgstr "Verworven van"
+
+#: ../treatment.py
+msgid "Auction"
+msgstr "Veiling"
+
+#: ../treatment.py
+msgid "Price"
+msgstr "Prijs"
+
+#: ../treatment.py
+msgid "Ownership category"
+msgstr "Eigendomscategorie"
+
+#: ../treatment.py
+msgid "Access"
+msgstr "Toegankelijkheid"
+
+#
+# Location
+#
+
+#: ../treatment.py
+msgid "Location"
+msgstr "Standplaats"
+
+#: ../treatment.py
+msgid "Normal location"
+msgstr "Vaste standplaats"
+
+#: ../treatment.py
+msgid "Current location"
+msgstr "Huidige locatie"
+
+#: ../treatment.py
+msgid "Start date"
+msgstr "Begindatum"
+
+#: ../treatment.py
+msgid "End date"
+msgstr "Einddatum"
+
+#: ../treatment.py
+msgid "Location type"
+msgstr "Soort standplaats"
+
+#: ../treatment.py
+msgid "Location"
+msgstr "Standplaats"
+
+#: ../treatment.py
+msgid "Fitness"
+msgstr "Geschiktheid"
+
+#: ../treatment.py
+msgid "Location checks"
+msgstr "Standplaatscontroles"
+
+#
+# Notes
+#
+
+#: ../treatment.py
+msgid "Free Fields"
+msgstr "Vrij Velden"
+
+#: ../treatment.py
+msgid "Confidential"
+msgstr "Vertrouwelijk"
+
+#
+# Labels
+#
+
+#: ../treatment.py
+msgid "Labels"
+msgstr "Etiketten"
+
+# Identification
+
+#: ../treatment.py
+msgid "Translated title"
+msgstr "Vertaalde titel"
+
+#: ../treatment.py
+msgid "Describer"
+msgstr "Beschrijver"
+
+#: ../treatment.py
+msgid "Taxonomy"
+msgstr "Taxonomie"
+
+#: ../treatment.py
+msgid "Taxonomy rank"
+msgstr "Taxonomie rang"
+
+#: ../treatment.py
+msgid "Scient. name"
+msgstr "Wet. naam"
+
+#: ../treatment.py
+msgid "Common name"
+msgstr "Populaire naam"
+
+#: ../treatment.py
+msgid "Determiner"
+msgstr "Determinator"
+
+#: ../treatment.py
+msgid "Object status"
+msgstr "Objectstatus"
+
+#: ../treatment.py
+msgid "Title and description"
+msgstr "Titel en beschrijving"
+
+
+#: ../treatment.py
+msgid "Title and description"
+msgstr "Titel en beschrijving"
+
+#
+# Iconography
+#
+
+#: ../treatment.py
+msgid "General theme"
+msgstr "Hoofdmotief algemeen"
+
+#: ../treatment.py
+msgid "Specific theme"
+msgstr "Hoofdmotief specifiek"
+
+#: ../treatment.py
+msgid "Classification theme"
+msgstr "Classificatieschema"
+
+#: ../treatment.py
+msgid "Code"
+msgstr "Code"
+
+#: ../treatment.py
+msgid "General search criteria"
+msgstr "Algemene onderwerpsontsluiting"
+
+#: ../treatment.py
+msgid "Content description"
+msgstr "Inhoudsbeschrijving"
+
+#: ../treatment.py
+msgid "Content person/institution"
+msgstr "Afgebeelde persoon/instelling"
+
+#: ../treatment.py
+msgid "Name type"
+msgstr "Soort naam"
+
+#: ../treatment.py
+msgid "Content subject"
+msgstr "Afgebeeld onderwerp"
+
+#: ../treatment.py
+msgid "Subject type"
+msgstr "Soort onderwerp"
+
+#: ../treatment.py
+msgid "Subject"
+msgstr "Naam"
+
+#: ../treatment.py
+msgid "Taxonomic rank"
+msgstr "Taxonomische rang"
+
+#: ../treatment.py
+msgid "Scientific name"
+msgstr "Wet. Naam"
+
+#: ../treatment.py
+msgid "Proper name"
+msgstr "Eigennaam"
+
+#: ../treatment.py
+msgid "Identifier"
+msgstr "Identifier"
+
+#: ../treatment.py
+msgid "Content period/date"
+msgstr "Content period/date"
+
+#: ../treatment.py
+msgid "Iconography source"
+msgstr "Iconografisch bron"
+
+#: ../treatment.py
+msgid "Source general"
+msgstr "Bron algemeen"
+
+#: ../treatment.py
+msgid "Source specific"
+msgstr "Bron specifiek"
+
+#: ../treatment.py
+msgid "Source object number"
+msgstr "Bron objectnummer"
+
+#: ../treatment.py
+msgid "Iconography"
+msgstr "Iconografie"
+
+#: ../treatment.py
+msgid "Content period/date"
+msgstr "Afgebeelde periode/datum"
+
+#
+# Inscriptions
+#
+
+#: ../treatment.py
+msgid "Script"
+msgstr "Schrijt"
+
+#: ../treatment.py
+msgid "Transliteration"
+msgstr "Transliteratie"
+
+
+#
+# Associations
+#
+
+#: ../treatment.py
+msgid "Associated person/institution"
+msgstr "Geassocieerde persoon/instelling"
+
+#: ../treatment.py
+msgid "Association"
+msgstr "Associatie"
+
+#: ../treatment.py
+msgid "Associated subject"
+msgstr "Geassocieerd onderwerp"
+
+#: ../treatment.py
+msgid "Associated period"
+msgstr "Geassocieerde periode"
+
+#: ../treatment.py
+msgid "Associations"
+msgstr "Associaties"
+
+#
+# Numbers/relationships
+#
+
+#: ../treatment.py
+msgid "Numbers/relationships"
+msgstr "Nummers/relaties"
+
+#: ../treatment.py
+msgid "Numbers"
+msgstr "Nummers"
+
+#: ../treatment.py
+msgid "Institution"
+msgstr "Instelling"
+
+#: ../treatment.py
+msgid "Number"
+msgstr "Nummer"
+
+#: ../treatment.py
+msgid "Relationships with other objects"
+msgstr "Relaties met andere objecten"
+
+#: ../treatment.py
+msgid "Part of"
+msgstr "Is deel van"
+
+#: ../treatment.py
+msgid "Parts"
+msgstr "Heeft als deel"
+
+#: ../treatment.py
+msgid "Related object"
+msgstr "Gerelateerd object"
+
+#: ../treatment.py
+msgid "Digital references"
+msgstr "Digitale referenties"
+
+#: ../treatment.py
+msgid "Title"
+msgstr "Titel"
+
+#: ../treatment.py
+msgid "Page mark"
+msgstr "Pagina-aanduiding"
+
+#: ../treatment.py
+msgid "Author"
+msgstr "Auteur"
+
+#: ../treatment.py
+msgid "Shelf mark"
+msgstr "Signatuur"
+
+#
+# Documentation (free) / archive
+#
+
+#: ../treatment.py
+msgid "Documentation (free) / archive"
+msgstr "Documentatie (vrij) / archief"
+
+#: ../treatment.py
+msgid "Documentation (free text)"
+msgstr "Documentatie (vrij tekst)"
+
+#: ../treatment.py
+msgid "Archive"
+msgstr "Archief"
+
+#: ../treatment.py
+msgid "Archive number"
+msgstr "Archiefnummer"
+
+
+#
+# Reproductions
+#
+
+#: ../treatment.py
+msgid "Reproductions"
+msgstr "Reproducties"
+
+#: ../treatment.py
+msgid "Reproduction"
+msgstr "Reproductie"
+
+#: ../treatment.py
+msgid "Reference"
+msgstr "Referentie"
+
+#: ../treatment.py
+msgid "Format"
+msgstr "Formaat"
+
+#: ../treatment.py
+msgid "Identifier (URL)"
+msgstr "Identifier (URL)"
+
+#
+# Recommendations/requirements
+#
+
+#: ../treatment.py
+msgid "Recommendations/requirements"
+msgstr "Aanbevelingen / vereisten"
+
+#: ../treatment.py
+msgid "Recommendations"
+msgstr "Aanbevelingen"
+
+#: ../treatment.py
+msgid "Display"
+msgstr "Tentoonstelling"
+
+#: ../treatment.py
+msgid "Enviroment"
+msgstr "Omgeving"
+
+#: ../treatment.py
+msgid "Handling"
+msgstr "Behandeling"
+
+#: ../treatment.py
+msgid "Packing"
+msgstr "Verpakking"
+
+#: ../treatment.py
+msgid "Security"
+msgstr "Veiligheid"
+
+#: ../treatment.py
+msgid "Security"
+msgstr "Veiligheid"
+
+#: ../treatment.py
+msgid "Storage"
+msgstr "Berging"
+
+#: ../treatment.py
+msgid "Legal / license requirements"
+msgstr "Wettelijke eisen / vergunningen"
+
+#: ../treatment.py
+msgid "Requirements"
+msgstr "Eisen"
+
+#: ../treatment.py
+msgid "Requirements held"
+msgstr "Vereisten in Bezit"
+
+#: ../treatment.py
+msgid "Current From"
+msgstr "Geldig van"
+
+#
+# Field collection
+#
+
+#: ../treatment.py
+msgid "Field Collection"
+msgstr "Vondstomstandigheden"
+
+#: ../treatment.py
+msgid "Field coll. number"
+msgstr "Vondstnummer"
+
+#: ../treatment.py
+msgid "Collector"
+msgstr "Vinder"
+
+#: ../treatment.py
+msgid "Event"
+msgstr "Gebeurtenis"
+
+#: ../treatment.py
+msgid "Date (early)"
+msgstr "Begindatum"
+
+
+#: ../treatment.py
+msgid "Date (late)"
+msgstr "Einddatum"
+
+#: ../treatment.py
+msgid "Method"
+msgstr "Methode"
+
+#: ../treatment.py
+msgid "Place"
+msgstr "Vindplaats"
+
+#: ../treatment.py
+msgid "Place code"
+msgstr "Code vindplaats"
+
+#: ../treatment.py
+msgid "Place feature"
+msgstr "Kenmerk vindplaats"
+
+#: ../treatment.py
+msgid "Co-ordinates field collection place"
+msgstr "Coördnaten vindplaats"
+
+#: ../treatment.py
+msgid "Grid type"
+msgstr "Coördinatenstelsel"
+
+#: ../treatment.py
+msgid "X co-ordinate"
+msgstr "X-coördnaat"
+
+#: ../treatment.py
+msgid "Addition"
+msgstr "Toevoeging"
+
+#: ../treatment.py
+msgid "Y co-ordinate"
+msgstr "Y-coördnaat"
+
+#: ../treatment.py
+msgid "Habitat and stratigraphy"
+msgstr "Milieu en stratigrafie"
+
+#: ../treatment.py
+msgid "Habitat"
+msgstr "Landschap/milieu"
+
+#: ../treatment.py
+msgid "Stratigraphy"
+msgstr "Stratigrafie"
+
+#: ../treatment.py
+msgid "Strat. type"
+msgstr "Soort strat."
+
+#
+# treatments
+#
+
+#: ../treatment.py
+msgid "treatments"
+msgstr "Tentoonstellingen"
+
+#: ../treatment.py
+msgid "treatment"
+msgstr "Tentoonstelling"
+
+
+#: ../treatment.py
+msgid "treatment name"
+msgstr "Tentoonstellingsnaam"
+
+#: ../treatment.py
+msgid "to"
+msgstr "t/m"
+
+#: ../treatment.py
+msgid "Venue"
+msgstr "Locatie"
+
+#: ../treatment.py
+msgid "Cat. no. object"
+msgstr "Cat.nr. object"
+
+#
+# Loans
+#
+
+#: ../treatment.py
+msgid "Loans"
+msgstr "Bruiklenen"
+
+#: ../treatment.py
+msgid "Incoming loans"
+msgstr "Inkomende bruiklenen"
+
+#: ../treatment.py
+msgid "Outgoing loans"
+msgstr "Uitgaande bruiklenen"
+
+#: ../treatment.py
+msgid "Loan number"
+msgstr "Bruikleennummer"
+
+#: ../treatment.py
+msgid "Lender"
+msgstr "Bruikleengever"
+
+#: ../treatment.py
+msgid "Requester"
+msgstr "Aanvrager"
+
+#: ../treatment.py
+msgid "Request reason"
+msgstr "Reden aanvraag"
+
+#: ../treatment.py
+msgid "Request period"
+msgstr "Aaanvraagperiode"
+
+#: ../treatment.py
+msgid "Contract period"
+msgstr "Contractperiode"
+
+#: ../treatment.py
+msgid "Contact"
+msgstr "Contactpersoon"
+
+#
+# treatments details
+#
+
+#: ../treatment.py
+msgid "treatment"
+msgstr "Tentoonstelling"
+
+#: ../treatment.py
+msgid "Alt. Title"
+msgstr "Alt. Titel"
+
+#: ../treatment.py
+msgid "Organizing institutions"
+msgstr "Organiserende instelling"
+
+#: ../treatment.py
+msgid "Name"
+msgstr "Naam"
+
+#: ../treatment.py
+msgid "Address"
+msgstr "Adres"
+
+#: ../treatment.py
+msgid "Country"
+msgstr "Land"
+
+#: ../treatment.py
+msgid "Telephone"
+msgstr "Telefoon"
+
+#: ../treatment.py
+msgid "treatments details"
+msgstr "Tentoonstelling"
+
+
+#: ../treatment.py
+msgid "label_event_start"
+msgstr "Aanvang"
+
+#: ../treatment.py
+msgid "label_event_end"
+msgstr "Einde"
+
+#: ../treatment.py
+msgid "Article"
+msgstr "Lidword"
+
+#: ../treatment.py
+msgid "Linked Objects"
+msgstr "Gekoppelde objecten"
+
+#: ../treatment.py
+msgid "Itinerary"
+msgstr "Agenda"
+
+
+
+#
+# Conservation treatment
+# 
+
+
+#: ../treatment.py
+msgid "Treatment number"
+msgstr "Behandelingsnummer"
+
+#: ../treatment.py
+msgid "Treatment type"
+msgstr "Soort Behandeling"
+
+#: ../treatment.py
+msgid "Reversible"
+msgstr "Reversibel"
+
+#: ../treatment.py
+msgid "Reversible"
+msgstr "Reversibel"
+
+#: ../treatment.py
+msgid "conversation"
+msgstr "conservering"
+
+#: ../treatment.py
+msgid "restauration"
+msgstr "restauratie"
+
+#: ../treatment.py
+msgid "Treatment method"
+msgstr "Behandelmethode"
+
+#: ../treatment.py
+msgid "Conservator"
+msgstr "Uitvoerder"
+
+#: ../treatment.py
+msgid "Material"
+msgstr "Materiall"
+
+#: ../treatment.py
+msgid "Recall date"
+msgstr "Rappeldatum"
+
+#: ../treatment.py
+msgid "Progress"
+msgstr "Voortgang"
+
+#: ../treatment.py
+msgid "Treatment"
+msgstr "Behandeling"
+
+#: ../treatment.py
+msgid "Condition description"
+msgstr "Toestandsbeschrijving"
+
+#: ../treatment.py
+msgid "Treatment plan"
+msgstr "Behandelplan"
+
+#: ../treatment.py
+msgid "Treatment summary"
+msgstr "Behandelingsbeschrijving"
+
+#: ../treatment.py
+msgid "(Digital) references"
+msgstr "(Digitale) documentatie"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

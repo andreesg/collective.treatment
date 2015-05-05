@@ -1,0 +1,85 @@
+<!-- Secondary fieldsets -->
+  
+<div metal:define-macro="test">
+
+  <tal:treatment_details tal:condition='python: fieldset_text == "treatment_details"'
+    tal:define='widgets group/widgets'>
+    <!-- Treatment details -->
+    <div class="row no-padding">
+        <h2 class="page-header" i18n:translate="">Treatment details</h2>
+
+        <div class="form-horizontal">
+          <tal:widget tal:replace="structure widgets/treatmentDetails_identification_treatmentNumber/@@ploneform-render-widget"/>
+          <tal:widget tal:replace="structure widgets/treatmentDetails_identification_treatmentType/@@ploneform-render-widget"/>
+          <tal:widget tal:replace="structure widgets/treatmentDetails_identification_reversible/@@ploneform-render-widget"/>
+        </div>
+
+        <div class="form-horizontal gridfield show-label hide-th">
+          <tal:widget tal:replace="structure widgets/treatmentDetails_identification_treatmentMethod/@@ploneform-render-widget"/>
+        </div>
+        <div class="form-horizontal gridfield show-label hide-th">
+          <tal:widget tal:replace="structure widgets/treatmentDetails_identification_conservator/@@ploneform-render-widget"/>
+        </div>
+        <div class="form-horizontal gridfield show-label hide-th">
+          <tal:widget tal:replace="structure widgets/treatmentDetails_identification_material/@@ploneform-render-widget"/>
+        </div>
+
+        <h2 class="page-header" i18n:translate="">Progress</h2>
+        <div class="form-horizontal">
+          <tal:widget tal:replace="structure widgets/treatmentDetails_progress_startDate/@@ploneform-render-widget"/>
+          <tal:widget tal:replace="structure widgets/treatmentDetails_progress_status/@@ploneform-render-widget"/>
+          <tal:widget tal:replace="structure widgets/treatmentDetails_progress_recallDate/@@ploneform-render-widget"/>
+          <tal:widget tal:replace="structure widgets/treatmentDetails_progress_endDate/@@ploneform-render-widget"/>
+        </div>
+
+        <h2 class="page-header" i18n:translate="">Treatment</h2>
+        <div class="form-horizontal gridfield show-label hide-th">
+          <tal:widget tal:replace="structure widgets/treatmentDetails_treatment_conditionDescription/@@ploneform-render-widget"/>
+        </div>
+        <div class="form-horizontal gridfield show-label hide-th">
+          <tal:widget tal:replace="structure widgets/treatmentDetails_treatment_treatmentPlan/@@ploneform-render-widget"/>
+        </div>
+        <div class="form-horizontal gridfield show-label hide-th">
+          <tal:widget tal:replace="structure widgets/treatmentDetails_treatment_treatmentSummary/@@ploneform-render-widget"/>
+        </div>
+
+        <h2 class="page-header" i18n:translate="">(Digital) references</h2>
+        <div class="form-horizontal gridfield">
+          <tal:widget tal:replace="structure widgets/treatmentDetails_digitalReferences/@@ploneform-render-widget"/>
+        </div>
+
+        <h2 class="page-header" i18n:translate="">Notes</h2>
+        <div class="form-horizontal gridfield">
+          <tal:widget tal:replace="structure widgets/treatmentDetails_notes/@@ploneform-render-widget"/>
+        </div>
+    </div>
+  </tal:treatment_details>
+
+  <tal:reproductions tal:condition='python: fieldset_text == "reproductions"'
+    tal:define='widgets group/widgets'>
+    <!-- Reproductions -->
+    <div class="row no-padding">
+        <h2 class="page-header" i18n:translate="">Reproduction</h2>
+
+        <div class="form-horizontal gridfield">
+          <tal:widget tal:replace="structure widgets/reproductions_reproduction/@@ploneform-render-widget"/>
+        </div>
+        
+    </div>
+  </tal:reproductions>
+
+  <tal:linked_objects tal:condition='python: fieldset_text == "linked_objects"'
+    tal:define='widgets group/widgets'>
+    <!-- Linked Objects -->
+    <div class="row no-padding">
+        <h2 class="page-header" i18n:translate="">Linked Objects</h2>
+
+        <div class="form-horizontal gridfield">
+          <tal:widget tal:replace="structure widgets/linkedObjects_linkedObjects/@@ploneform-render-widget"/>
+        </div>
+    </div>
+  </tal:linked_objects>
+
+
+  
+</div>
