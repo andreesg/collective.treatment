@@ -78,7 +78,7 @@
                           tal:define="show_default_label show_default_label|nothing;
                                       has_groups has_groups|nothing">
 
-                          <fieldset id="fieldset-default" tal:omit-tag="not:show_default_label">
+                          <!--<fieldset id="fieldset-default" tal:omit-tag="not:show_default_label">
 
                               <legend tal:condition="show_default_label"
                                       tal:attributes="id string:fieldsetlegend-default"
@@ -93,7 +93,7 @@
                                       </metal:field-slot>
                                   </tal:widgets>
                               </metal:define>
-                          </fieldset>
+                          </fieldset>-->
 
                           <!-- Secondary fieldsets -->
                           <tal:block tal:repeat="group groups" condition="has_groups">
