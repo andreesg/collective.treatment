@@ -33,6 +33,11 @@ from z3c.form.browser.textlines import TextLinesFieldWidget
 from collective.z3cform.datagridfield import DataGridFieldFactory, DictRow
 from collective.z3cform.datagridfield.blockdatagridfield import BlockDataGridFieldFactory
 
+#
+# plone.app.widgets dependencies
+#
+from plone.app.widgets.dx import DatetimeFieldWidget
+
 # # # # # # # # # # # # # # # 
 # Dexterity imports         # 
 # # # # # # # # # # # # # # # 
@@ -121,6 +126,7 @@ class ITreatment(form.Schema):
         required=False
     )
     dexteritytextindexer.searchable('treatmentDetails_progress_startDate')
+    form.widget(treatmentDetails_progress_startDate=DatetimeFieldWidget)
 
     treatmentDetails_progress_status = schema.TextLine(
         title=_(u'Status'),
@@ -133,13 +139,14 @@ class ITreatment(form.Schema):
         required=False
     )
     dexteritytextindexer.searchable('treatmentDetails_progress_recallDate')
+    form.widget(treatmentDetails_progress_recallDate=DatetimeFieldWidget)
 
     treatmentDetails_progress_endDate = schema.Datetime(
         title=_(u'End date'),
         required=False
     )
     dexteritytextindexer.searchable('treatmentDetails_progress_endDate')
-
+    form.widget(treatmentDetails_progress_endDate=DatetimeFieldWidget)
 
     # Treatment
     treatmentDetails_treatment_conditionDescription = ListField(title=_(u'Condition description'),
