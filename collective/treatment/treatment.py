@@ -121,12 +121,12 @@ class ITreatment(form.Schema):
     dexteritytextindexer.searchable('treatmentDetails_identification_material')
 
     # Progress
-    treatmentDetails_progress_startDate = schema.Datetime(
+    treatmentDetails_progress_startDate = schema.TextLine(
         title=_(u'Start date'),
         required=False
     )
     dexteritytextindexer.searchable('treatmentDetails_progress_startDate')
-    form.widget(treatmentDetails_progress_startDate=DatetimeFieldWidget)
+    #form.widget(treatmentDetails_progress_startDate=DatetimeFieldWidget)
 
     treatmentDetails_progress_status = schema.TextLine(
         title=_(u'Status'),
@@ -134,19 +134,19 @@ class ITreatment(form.Schema):
     )
     dexteritytextindexer.searchable('treatmentDetails_progress_status')
 
-    treatmentDetails_progress_recallDate = schema.Datetime(
+    treatmentDetails_progress_recallDate = schema.TextLine(
         title=_(u'Recall date'),
         required=False
     )
     dexteritytextindexer.searchable('treatmentDetails_progress_recallDate')
-    form.widget(treatmentDetails_progress_recallDate=DatetimeFieldWidget)
+    #form.widget(treatmentDetails_progress_recallDate=DatetimeFieldWidget)
 
-    treatmentDetails_progress_endDate = schema.Datetime(
+    treatmentDetails_progress_endDate = schema.TextLine(
         title=_(u'End date'),
         required=False
     )
     dexteritytextindexer.searchable('treatmentDetails_progress_endDate')
-    form.widget(treatmentDetails_progress_endDate=DatetimeFieldWidget)
+    #form.widget(treatmentDetails_progress_endDate=DatetimeFieldWidget)
 
     # Treatment
     treatmentDetails_treatment_conditionDescription = ListField(title=_(u'Condition description'),
