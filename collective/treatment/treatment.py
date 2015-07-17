@@ -32,6 +32,7 @@ from z3c.form.browser.textlines import TextLinesFieldWidget
 #
 from collective.z3cform.datagridfield import DataGridFieldFactory, DictRow
 from collective.z3cform.datagridfield.blockdatagridfield import BlockDataGridFieldFactory
+from collective.z3cform.datagridfield.interfaces import IDataGridField
 
 #
 # plone.app.widgets dependencies
@@ -228,6 +229,9 @@ class AddForm(add.DefaultAddForm):
         super(AddForm, self).update()
         for group in self.groups:
             for widget in group.widgets.values():
+                if IDataGridField.providedBy(widget):
+                    widget.auto_append = False
+                    widget.allow_reorder = True
                 alsoProvides(widget, IFormWidget)
 
 class AddView(add.DefaultAddView):
@@ -241,5 +245,8 @@ class EditForm(edit.DefaultEditForm):
         super(EditForm, self).update()
         for group in self.groups:
             for widget in group.widgets.values():
+                if IDataGridField.providedBy(widget):
+                    widget.auto_append = False
+                    widget.allow_reorder = True
                 alsoProvides(widget, IFormWidget)
 
