@@ -64,6 +64,12 @@ from .utils.views import *
 
 class ITreatment(form.Schema):
 
+    priref = schema.TextLine(
+        title=_(u'priref'),
+        required=False
+    )
+    dexteritytextindexer.searchable('priref')
+
     text = RichText(
         title=_(u"Body"),
         required=False
