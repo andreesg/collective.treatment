@@ -47,6 +47,12 @@ from collective import dexteritytextindexer
 from plone.dexterity.browser.view import DefaultView
 from plone.dexterity.content import Container
 from plone.dexterity.browser import add, edit
+from plone.app.widgets.dx import AjaxSelectFieldWidget
+
+from z3c.relationfield.schema import RelationChoice
+from z3c.relationfield.schema import RelationList
+from collective.object.utils.widgets import SimpleRelatedItemsFieldWidget, AjaxSingleSelectFieldWidget
+from collective.object.utils.source import ObjPathSourceBinder
 
 # # # # # # # # # # # # # # # # # #
 # !treatment specific imports!   #
@@ -78,7 +84,7 @@ class ITreatment(form.Schema):
     # # # # # # # # # # #
     # Treatment details #
     # # # # # # # # # # #
-    model.fieldset('treatment_details', label=_(u'Treatment'), 
+    model.fieldset('treatment_details', label=_(u'Treatment details'), 
         fields=['treatmentDetails_identification_treatmentNumber',
                 'treatmentDetails_identification_treatmentType', 'treatmentDetails_identification_reversible',
                 'treatmentDetails_identification_treatmentMethod', 'treatmentDetails_identification_conservator',
@@ -86,7 +92,7 @@ class ITreatment(form.Schema):
                 'treatmentDetails_progress_status', 'treatmentDetails_progress_recallDate',
                 'treatmentDetails_progress_endDate', 'treatmentDetails_treatment_conditionDescription',
                 'treatmentDetails_treatment_treatmentPlan', 'treatmentDetails_treatment_treatmentSummary',
-                'treatmentDetails_digitalReferences', 'reproductions_reproduction', 'linkedObjects_linkedObjects',
+                'treatmentDetails_digitalReferences',
                 'treatmentDetails_notes']
     )
 
@@ -109,11 +115,14 @@ class ITreatment(form.Schema):
         required=False
     )
     
-    treatmentDetails_identification_treatmentMethod = ListField(title=_(u'Treatment method'),
-        value_type=DictRow(title=_(u'Treatment method'), schema=ITreatmentMethod),
-        required=False)
-    form.widget(treatmentDetails_identification_treatmentMethod=DataGridFieldFactory)
-    dexteritytextindexer.searchable('treatmentDetails_identification_treatmentMethod')
+    treatmentDetails_identification_treatmentMethod = schema.List(
+        title=_(u'Treatment method'),
+        required=False,
+        value_type=schema.TextLine(),
+        missing_value=[],
+        default=[]
+    )
+    form.widget('treatmentDetails_identification_treatmentMethod', AjaxSelectFieldWidget, vocabulary="collective.treatment.treatmentmethod")
 
     treatmentDetails_identification_conservator = ListField(title=_(u'Conservator'),
         value_type=DictRow(title=_(u'Conservator'), schema=IConversator),
@@ -121,11 +130,14 @@ class ITreatment(form.Schema):
     form.widget(treatmentDetails_identification_conservator=DataGridFieldFactory)
     dexteritytextindexer.searchable('treatmentDetails_identification_conservator')
 
-    treatmentDetails_identification_material = ListField(title=_(u'Material'),
-        value_type=DictRow(title=_(u'Material'), schema=IMaterial),
-        required=False)
-    form.widget(treatmentDetails_identification_material=DataGridFieldFactory)
-    dexteritytextindexer.searchable('treatmentDetails_identification_material')
+    treatmentDetails_identification_material = schema.List(
+        title=_(u'Material'),
+        required=False,
+        value_type=schema.TextLine(),
+        missing_value=[],
+        default=[]
+    )
+    form.widget('treatmentDetails_identification_material', AjaxSelectFieldWidget, vocabulary="collective.treatment.material")
 
     # Progress
     treatmentDetails_progress_startDate = schema.TextLine(

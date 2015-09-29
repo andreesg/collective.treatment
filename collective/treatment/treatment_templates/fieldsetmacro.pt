@@ -1,12 +1,67 @@
 <!-- Secondary fieldsets -->
   
+<div metal:define-macro="private_view">
+  <tal:treatment_details tal:condition='python: fieldset_text == "treatment_details"'
+    tal:define='widgets group/widgets'>
+    <!-- Treatment details -->
+    <div class="row no-padding">
+        <h2 class="page-header" i18n:translate="">Identificatie</h2>
+
+        <div class="form-horizontal">
+          <tal:widget tal:replace="structure widgets/treatmentDetails_identification_treatmentNumber/@@ploneform-render-widget"/>
+          <tal:widget tal:replace="structure widgets/treatmentDetails_identification_treatmentType/@@ploneform-render-widget"/>
+          <tal:widget tal:replace="structure widgets/treatmentDetails_identification_reversible/@@ploneform-render-widget"/>
+        </div>
+
+        <div class="form-horizontal gridfield show-label hide-th">
+          <tal:widget tal:replace="structure widgets/treatmentDetails_identification_treatmentMethod/@@ploneform-render-widget"/>
+        </div>
+        <div class="form-horizontal gridfield show-label hide-th">
+          <tal:widget tal:replace="structure widgets/treatmentDetails_identification_conservator/@@ploneform-render-widget"/>
+        </div>
+        <div class="form-horizontal gridfield show-label hide-th">
+          <tal:widget tal:replace="structure widgets/treatmentDetails_identification_material/@@ploneform-render-widget"/>
+        </div>
+
+        <h2 class="page-header" i18n:translate="">Voortgang</h2>
+        <div class="form-horizontal">
+          <tal:widget tal:replace="structure widgets/treatmentDetails_progress_startDate/@@ploneform-render-widget"/>
+          <tal:widget tal:replace="structure widgets/treatmentDetails_progress_status/@@ploneform-render-widget"/>
+          <tal:widget tal:replace="structure widgets/treatmentDetails_progress_recallDate/@@ploneform-render-widget"/>
+          <tal:widget tal:replace="structure widgets/treatmentDetails_progress_endDate/@@ploneform-render-widget"/>
+        </div>
+
+        <h2 class="page-header" i18n:translate="">Behandeling</h2>
+        <div class="form-horizontal gridfield show-label hide-th">
+          <tal:widget tal:replace="structure widgets/treatmentDetails_treatment_conditionDescription/@@ploneform-render-widget"/>
+        </div>
+        <div class="form-horizontal gridfield show-label hide-th">
+          <tal:widget tal:replace="structure widgets/treatmentDetails_treatment_treatmentPlan/@@ploneform-render-widget"/>
+        </div>
+        <div class="form-horizontal gridfield show-label hide-th">
+          <tal:widget tal:replace="structure widgets/treatmentDetails_treatment_treatmentSummary/@@ploneform-render-widget"/>
+        </div>
+
+        <h2 class="page-header" i18n:translate="">(Digitale) documentatie</h2>
+        <div class="form-horizontal gridfield">
+          <tal:widget tal:replace="structure widgets/treatmentDetails_digitalReferences/@@ploneform-render-widget"/>
+        </div>
+
+        <h2 class="page-header" i18n:translate="">Bijzonderheden</h2>
+        <div class="form-horizontal gridfield hide-th">
+          <tal:widget tal:replace="structure widgets/treatmentDetails_notes/@@ploneform-render-widget"/>
+        </div>
+    </div>
+  </tal:treatment_details>
+</div>
+
 <div metal:define-macro="test">
 
   <tal:treatment_details tal:condition='python: fieldset_text == "treatment_details"'
     tal:define='widgets group/widgets'>
     <!-- Treatment details -->
     <div class="row no-padding">
-        <h2 class="page-header" i18n:translate="">Treatment details</h2>
+        <h2 class="page-header" i18n:translate="">Identificatie</h2>
 
         <div class="form-horizontal">
           <tal:widget tal:replace="structure widgets/treatmentDetails_identification_treatmentNumber/@@ploneform-render-widget"/>
@@ -49,7 +104,7 @@
         </div>
 
         <h2 class="page-header" i18n:translate="">Notes</h2>
-        <div class="form-horizontal gridfield">
+        <div class="form-horizontal gridfield hide-th">
           <tal:widget tal:replace="structure widgets/treatmentDetails_notes/@@ploneform-render-widget"/>
         </div>
     </div>

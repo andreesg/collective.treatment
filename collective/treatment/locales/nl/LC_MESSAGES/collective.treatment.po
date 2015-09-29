@@ -1239,7 +1239,7 @@ msgstr "Behandelingsnummer"
 
 #: ../treatment.py
 msgid "Treatment type"
-msgstr "Soort Behandeling"
+msgstr "Soort behandeling"
 
 #: ../treatment.py
 msgid "Reversible"
@@ -1267,7 +1267,7 @@ msgstr "Uitvoerder"
 
 #: ../treatment.py
 msgid "Material"
-msgstr "Materiall"
+msgstr "Materiaal"
 
 #: ../treatment.py
 msgid "Recall date"
@@ -1297,7 +1297,9 @@ msgstr "Behandelingsbeschrijving"
 msgid "(Digital) references"
 msgstr "(Digitale) documentatie"
 
-
+#: ../treatment.py
+msgid "Treatment details"
+msgstr "Behandelingsgegevens"
 
 
 
