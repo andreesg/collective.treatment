@@ -68,6 +68,21 @@ from .utils.views import *
 # # # # # # # # # # # # #
 # # # # # # # # # # # # #
 
+from plone.app.content.interfaces import INameFromTitle
+class INameFromTreatmentNumber(INameFromTitle):
+    def title():
+        """Return a processed title"""
+
+class NameFromTreatmentNumber(object):
+    implements(INameFromTreatmentNumber)
+    
+    def __init__(self, context):
+        self.context = context
+
+    @property
+    def title(self):
+        return self.context.treatmentDetails_identification_treatmentNumber
+
 class ITreatment(form.Schema):
 
     priref = schema.TextLine(
@@ -99,14 +114,16 @@ class ITreatment(form.Schema):
     # Identification
     treatmentDetails_identification_treatmentNumber = schema.TextLine(
         title=_(u'Treatment number'),
-        required=False
+        required=True
     )
     dexteritytextindexer.searchable('treatmentDetails_identification_treatmentNumber')
 
     treatmentDetails_identification_treatmentType = schema.Choice(
         vocabulary=treatmenttype_vocabulary,
         title=_(u'Treatment type'),
-        required=False
+        required=True,
+        default="No value",
+        missing_value=" "
     )
     dexteritytextindexer.searchable('treatmentDetails_identification_treatmentType')
 

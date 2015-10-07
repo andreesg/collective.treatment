@@ -88,6 +88,11 @@
 
   <!-- -*- extra stuff goes here -*- -->
 
+  <adapter for=".treatment.ITreatment"
+    provides=".treatment.INameFromTreatmentNumber"
+    factory=".treatment.NameFromTreatmentNumber"
+    />
+
   <utility
     component=".utils.vocabularies.TreatmentMethodVocabularyFactory"
     name="collective.treatment.treatmentmethod"

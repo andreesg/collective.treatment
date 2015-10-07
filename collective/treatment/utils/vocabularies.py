@@ -15,9 +15,13 @@ def _createTreatmentTypeVocabulary():
         "restauration": _(u"restauration"),
     }
 
+    terms = []
+    terms.append(SimpleTerm(value="No value", token=str("No value"), title=_(u" ")))
     for key, name in treatment_types.items():
         term = SimpleTerm(value=key, token=str(key), title=name)
-        yield term
+        terms.append(term)
+    
+    return terms
 
 def _createInsuranceTypeVocabulary():
     insurance_types = {
