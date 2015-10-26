@@ -8,7 +8,7 @@
         <h2 class="page-header" i18n:translate="">Identificatie</h2>
 
         <div class="form-horizontal">
-          <tal:widget tal:replace="structure widgets/treatmentDetails_identification_treatmentNumber/@@ploneform-render-widget"/>
+          <tal:widget tal:replace="structure widgets/title/@@ploneform-render-widget"/>
           <tal:widget tal:replace="structure widgets/treatmentDetails_identification_treatmentType/@@ploneform-render-widget"/>
           <tal:widget tal:replace="structure widgets/treatmentDetails_identification_reversible/@@ploneform-render-widget"/>
         </div>
@@ -64,7 +64,7 @@
         <h2 class="page-header" i18n:translate="">Identificatie</h2>
 
         <div class="form-horizontal">
-          <tal:widget tal:replace="structure widgets/treatmentDetails_identification_treatmentNumber/@@ploneform-render-widget"/>
+          <tal:widget tal:replace="structure widgets/title/@@ploneform-render-widget"/>
           <tal:widget tal:replace="structure widgets/treatmentDetails_identification_treatmentType/@@ploneform-render-widget"/>
           <tal:widget tal:replace="structure widgets/treatmentDetails_identification_reversible/@@ploneform-render-widget"/>
         </div>

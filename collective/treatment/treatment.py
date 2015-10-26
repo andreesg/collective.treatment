@@ -81,7 +81,7 @@ class NameFromTreatmentNumber(object):
 
     @property
     def title(self):
-        return self.context.treatmentDetails_identification_treatmentNumber
+        return self.context.title
 
 class ITreatment(form.Schema):
 
@@ -91,16 +91,11 @@ class ITreatment(form.Schema):
     )
     dexteritytextindexer.searchable('priref')
 
-    text = RichText(
-        title=_(u"Body"),
-        required=False
-    )
-
     # # # # # # # # # # #
     # Treatment details #
     # # # # # # # # # # #
     model.fieldset('treatment_details', label=_(u'Treatment details'), 
-        fields=['treatmentDetails_identification_treatmentNumber',
+        fields=['title',
                 'treatmentDetails_identification_treatmentType', 'treatmentDetails_identification_reversible',
                 'treatmentDetails_identification_treatmentMethod', 'treatmentDetails_identification_conservator',
                 'treatmentDetails_identification_material', 'treatmentDetails_progress_startDate',
@@ -112,11 +107,11 @@ class ITreatment(form.Schema):
     )
 
     # Identification
-    treatmentDetails_identification_treatmentNumber = schema.TextLine(
+    title = schema.TextLine(
         title=_(u'Treatment number'),
         required=True
     )
-    dexteritytextindexer.searchable('treatmentDetails_identification_treatmentNumber')
+    dexteritytextindexer.searchable('title')
 
     treatmentDetails_identification_treatmentType = schema.Choice(
         vocabulary=treatmenttype_vocabulary,
