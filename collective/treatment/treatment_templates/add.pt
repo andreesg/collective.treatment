@@ -104,6 +104,7 @@
                                                   class string:kssattr-fieldset-${fieldset_name};
                                                   data-fieldset fieldset_name">
 
+                                      <tal:group_restriction tal:condition="python: fieldset_text not in ['linked_objects']">
                                       <legend tal:define="form_name group/label"
                                               tal:condition="form_name"
                                               tal:attributes="id string:fieldsetlegend-${repeat/group/index}"
@@ -126,7 +127,7 @@
                                       </tal:block>
                                       
                                       <tal metal:use-macro="view/context/@@collective.treatment.fieldsetmacro/test" />
-
+                                    </tal:group_restriction>
                               </fieldset>
                         </tal:block>
 

@@ -236,14 +236,21 @@ class ITreatment(form.Schema):
     # Linked objects    #
     # # # # # # # # # # #
     model.fieldset('linked_objects', label=_(u'Linked Objects'), 
-        fields=['linkedObjects_linkedObjects']
+        fields=['linkedObjects_temp']
     )
 
-    linkedObjects_linkedObjects = ListField(title=_(u'Linked Objects'),
+    linkedObjects_temp = schema.TextLine(
+        title=_(u'Object number'),
+        required=False,
+        default=u"",
+        missing_value=u""
+    )
+
+    """linkedObjects_linkedObjects = ListField(title=_(u'Linked Objects'),
         value_type=DictRow(title=_(u'Linked Objects'), schema=ILinkedObjects),
         required=False)
     form.widget(linkedObjects_linkedObjects=DataGridFieldFactory)
-    dexteritytextindexer.searchable('linkedObjects_linkedObjects')
+    dexteritytextindexer.searchable('linkedObjects_linkedObjects')"""
 
 
 # # # # # # # # # # # # # #
