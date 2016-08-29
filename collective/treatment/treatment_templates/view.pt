@@ -4,11 +4,42 @@
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
       lang="en"
       metal:use-macro="context/main_template/macros/master"
-      i18n:domain="collective.treatment">
+      i18n:domain="collective.personOrInstitution">
 
 <body>
 
-<metal:main fill-slot="content-core">
+<metal:title fill-slot="content-title">
+      <metal:block define-macro="content-title">
+        <tal:definitions define="user_admin view/checkUserPermission;
+                                  object_number python: getattr(context, 'identification_identification_objectNumber', False)">
+
+          <tal:admin_title tal:condition="user_admin">
+            <tal:with_number tal:condition="object_number">
+              <h1 class="documentFirstHeading" tal:content="python: object_number+ ' - ' +context.title">
+                 Generic KSS Title. Is rendered with class="documentFirstHeading".
+              </h1>
+            </tal:with_number>
+            
+            <tal:without_number tal:condition="not:object_number">
+              <h1 metal:use-macro="context/kss_generic_macros/macros/generic_title_view">
+               Generic KSS Title. Is rendered with class="documentFirstHeading".
+              </h1>
+            </tal:without_number>
+          </tal:admin_title>
+
+          <tal:not_admin_title tal:condition="not:user_admin">
+            <h1 metal:use-macro="context/kss_generic_macros/macros/generic_title_view">
+               Generic KSS Title. Is rendered with class="documentFirstHeading".
+            </h1>
+          </tal:not_admin_title>
+
+        </tal:definitions>
+      </metal:block>
+</metal:title>
+
+<!--<tal:widget tal:replace="structure widget/@@ploneform-render-widget"/>-->
+
+<metal:main fill-slot="content-core" >
   <metal:content-core define-macro="content-core">
     
     <tal:permissions
@@ -18,11 +49,11 @@
     <tal:notadmin tal:condition="not:user_admin">
       <div id="parent-fieldname-text">
         <div id="body-text">
-          
+          <p tal:condition="context/text" tal:content="structure python:context.text.output_relative_to(context.view)" tal:on-error="nothing"></p>
         </div>
 
         <div class="container object-container">
-          <div class="object-fieldset">
+          <div class="object-fieldset row">
             
           </div>
         </div>
@@ -32,8 +63,10 @@
   <tal:admin tal:condition="user_admin">
     <div class="template-edit">
       <div id="content-core">
+
+        <div id="ajax-error-msg" class="alert alert-warning" role="alert"></div>
     
-        <form class="enableFormTabbing">
+        <form data-pat-autotoc="levels: legend; section: fieldset; className: autotabs" class="rowlike enableUnloadProtection enableFormTabbing pat-autotoc autotabs;" id="form">
 
         <tal:block tal:repeat="group view/groups">
        
@@ -64,12 +97,11 @@
                     <div class="field error"
                         tal:condition="not:nocall:error/widget"
                         tal:content="structure error/render"
-                        />
+                    />
                 </tal:block>
-
-                <tal:restriction tal:condition="python: fieldset_name == 'treatment_details'">
-                  <tal metal:use-macro="view/context/@@collective.treatment.fieldsetmacro/private_view" />
-                </tal:restriction>
+                <tal:block define="view nocall:group">
+                    <metal:block use-macro="context/@@ploneform-macros/widget_rendering" />
+                </tal:block> 
         </fieldset>
       
       </tal:block>
@@ -84,3 +116,4 @@
 
 </body>
 </html>
+

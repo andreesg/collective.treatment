@@ -37,7 +37,7 @@ from collective.z3cform.datagridfield.interfaces import IDataGridField
 #
 # plone.app.widgets dependencies
 #
-from plone.app.widgets.dx import DatetimeFieldWidget
+from plone.app.z3cform.widget import DatetimeFieldWidget
 
 # # # # # # # # # # # # # # # 
 # Dexterity imports         # 
@@ -47,7 +47,7 @@ from collective import dexteritytextindexer
 from plone.dexterity.browser.view import DefaultView
 from plone.dexterity.content import Container
 from plone.dexterity.browser import add, edit
-from plone.app.widgets.dx import AjaxSelectFieldWidget
+from plone.app.z3cform.widget import AjaxSelectFieldWidget
 
 from z3c.relationfield.schema import RelationChoice
 from z3c.relationfield.schema import RelationList
@@ -236,21 +236,21 @@ class ITreatment(form.Schema):
     # Linked objects    #
     # # # # # # # # # # #
     model.fieldset('linked_objects', label=_(u'Linked Objects'), 
-        fields=['linkedObjects_temp']
+        fields=['linkedObjects_linkedObjects']
     )
 
-    linkedObjects_temp = schema.TextLine(
+    """linkedObjects_temp = schema.TextLine(
         title=_(u'Object number'),
         required=False,
         default=u"",
         missing_value=u""
-    )
+    )"""
 
-    """linkedObjects_linkedObjects = ListField(title=_(u'Linked Objects'),
+    linkedObjects_linkedObjects = ListField(title=_(u'Linked Objects'),
         value_type=DictRow(title=_(u'Linked Objects'), schema=ILinkedObjects),
         required=False)
     form.widget(linkedObjects_linkedObjects=DataGridFieldFactory)
-    dexteritytextindexer.searchable('linkedObjects_linkedObjects')"""
+    dexteritytextindexer.searchable('linkedObjects_linkedObjects')
 
 
 # # # # # # # # # # # # # #

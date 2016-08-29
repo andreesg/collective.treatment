@@ -6,7 +6,7 @@ from zope.interface import Interface
 from collective.treatment import MessageFactory as _
 from ..utils.vocabularies import _createPriorityVocabulary, _createInsuranceTypeVocabulary
 from zope.schema.vocabulary import SimpleTerm, SimpleVocabulary
-from plone.app.widgets.dx import AjaxSelectFieldWidget
+from plone.app.z3cform.widget import AjaxSelectFieldWidget
 
 from z3c.relationfield.schema import RelationChoice
 from z3c.relationfield.schema import RelationList
@@ -45,7 +45,7 @@ class IConversator(Interface):
         missing_value=[],
         value_type=RelationChoice(
             title=u"Related",
-            source=ObjPathSourceBinder(portal_type='PersonOrInstitution')
+            vocabulary='collective.object.relateditems'
         ),
         required=False
     )
@@ -80,7 +80,7 @@ class ILinkedObjects(Interface):
         missing_value=[],
         value_type=RelationChoice(
             title=u"Related",
-            source=ObjPathSourceBinder(portal_type='Object')
+            vocabulary='collective.object.relateditems'
         ),
         required=False
     )
@@ -92,9 +92,9 @@ class ILinkedObjects(Interface):
 ## Reproductions
 class IReproduction(Interface):
     reference = schema.TextLine(title=_(u'Reference'), required=False)
-    type = schema.TextLine(title=_(u'Type'), required=False)
-    format = schema.TextLine(title=_(u'Format'), required=False)
-    date = schema.TextLine(title=_(u'Date'), required=False)
+    #type = schema.TextLine(title=_(u'Type'), required=False)
+    #format = schema.TextLine(title=_(u'Format'), required=False)
+    #date = schema.TextLine(title=_(u'Date'), required=False)
     identifierURL = schema.TextLine(title=_(u'Identifier (URL)'), required=False)
     notes = schema.Text(title=_(u'Notes'), required=False)
 
